@@ -17,7 +17,7 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/chrisj-skinner.github.io/LICENSE) file, including but not limited to: 
+Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/package.json) file, including but not limited to: 
 
 - [gulp](http://gulpjs.com/)
 - [browserify](http://browserify.org/)
@@ -61,7 +61,7 @@ The will include the following file structure with minified css, js files along 
 		index.html
 
 
-For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/chrisj-skinner.github.io/LICENSE)
+For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/gulpfile.babel.js)
 
 ## Customising the LESS and JS modules - Advanced*
 
@@ -86,4 +86,4 @@ Pull requests are the way to go here. I apologise in advance for the slow action
 
 ## Copyright and License
 
-Code released under the [MIT](https://github.com/chrisj-skinner/chrisj-skinner.github.io/LICENSE) license.
+Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/LICENSE) license.
