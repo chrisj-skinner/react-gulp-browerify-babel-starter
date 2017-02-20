@@ -33,12 +33,12 @@ Dependencies are listed within the [package.json](https://github.com/chrisj-skin
 ## Commands / Builds
 
 
-#### To set up the structure
+### To set up the structure
 `#gulp setup`
 This will pull all related files into the correct directories.
 
 
-#### Setup a development environment:
+### Setup a development environment:
 `#gulp dev`
 The dev environment will listen for changes on the following files types:
 
@@ -48,7 +48,7 @@ The dev environment will listen for changes on the following files types:
 | js            | re-complile, browserify, babelify, concat, minify and then refresh the browser |
 | less          | re-complile, concat, minify and then refresh the browser						 |
 
-#### Build for distribution
+### Build for distribution
 `#gulp build`
 A distribution folder (dist/) will be created in the working directory ready deployment.
 
@@ -63,16 +63,16 @@ The will include the following file structure with minified css, js files along 
 
 For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/chrisj-skinner.github.io/LICENSE)
 
-## Customising the LESS and JS - Advanced*
+## Customising the LESS and JS modules - Advanced*
 
 Once `#gulp setup` has been run you can edit the following 2 files to customise what elements of bootstrap you want to bring accross into you project.
 
-`vendor/bootstrap/less/bootstrap.less` - controls which less module to import
-`vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
+- `vendor/bootstrap/less/bootstrap.less` - controls which less module to import
+- `vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
 
-Comment out any particulur module you do not wish to import. This will create small sized js and css files resulting in lower overhead on the front end.
+Comment out any particulur module you do not wish to import. Benifits of this will be more manageable code when error fixing and smaller sized distributions files.
 
-*You should have an understanding of how bootstrap works and the dependencies required for both the LESS and JS modules before editing the above files.
+*You should at least have a basic understanding of how bootstrap works and the dependencies required for both the LESS and JS modules before editing the above files.
 
 ## Future plans / ideas
 
