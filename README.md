@@ -67,10 +67,12 @@ For more information about what each task does - view the [gulpfile.babel.js](ht
 
 Once `#gulp setup` has been run you can edit the following 2 files to customise what elements of bootstrap you want to bring accross into you project.
 
-- `vendor/bootstrap/less/bootstrap.less` - controls which less module to import
-- `vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
+`vendor/bootstrap/less/bootstrap.less` - controls which less module to import  
+`vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
 
 Comment out any particulur module you do not wish to import. Benifits of this will be more manageable code when error fixing and smaller sized distributions files.
+
+***
 
 *You should at least have a basic understanding of how bootstrap works and the dependencies required for both the LESS and JS modules before editing the above files.
 
