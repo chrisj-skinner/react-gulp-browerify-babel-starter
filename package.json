@@ -1,12 +1,12 @@
 {
-  "name": "freelancer",
-  "title": "Freelancer",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
-  "author": "Start Bootstrap",
+  "name": "starter-gulp-bootstrap",
+  "title": "Starter Gulp Bootstrap 3",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync",
+  "author": "chrisskinner.co",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "url": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/LICENSE"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+    "url": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
