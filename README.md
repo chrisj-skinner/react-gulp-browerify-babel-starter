@@ -11,7 +11,7 @@ Make sure you have the following installed
 - [node](https://github.com/nodejs/node/wiki)
 - [gulp](http://gulpjs.com/) (globally installed). A local copy will be installed when running `npm install`
 
-Run `npm install`
+Run `#npm install`
 
 This will get all the dependencies needed to run this starter setup
 
@@ -34,22 +34,22 @@ Dependencies are listed within the [package.json](https://github.com/chrisj-skin
 
 
 ### To set up the structure
-`#gulp setup`
+`#gulp setup`  
 This will pull all related files into the correct directories.
 
 
 ### Setup a development environment:
-`#gulp dev`
-The dev environment will listen for changes on the following files types:
+`#gulp dev`  
+This will complile all less and js files, start a local server and then listen for changes on the following files types:
 
-| File Type     | Result        																 |
+| File Type     | Action        																 |
 | ------------- | -------------------------------------------------------------------------------|
 | html          | refresh the browser 															 |
 | js            | re-complile, browserify, babelify, concat, minify and then refresh the browser |
 | less          | re-complile, concat, minify and then refresh the browser						 |
 
 ### Build for distribution
-`#gulp build`
+`#gulp build`  
 A distribution folder (dist/) will be created in the working directory ready deployment.
 
 The will include the following file structure with minified css, js files along with .map files for each.
@@ -67,7 +67,7 @@ For more information about what each task does - view the [gulpfile.babel.js](ht
 
 Once `#gulp setup` has been run you can edit the following 2 files to customise what elements of bootstrap you want to bring accross into you project.
 
-`vendor/bootstrap/less/bootstrap.less` - controls which less module to import  
+`vendor/bootstrap/less/bootstrap.less` - controls which less modules to import  
 `vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
 
 Comment out any particulur module you do not wish to import. Benifits of this will be more manageable code when error fixing and smaller sized distributions files.
