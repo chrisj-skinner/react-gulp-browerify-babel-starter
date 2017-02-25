@@ -1,12 +1,12 @@
 {
   "name": "starter-gulp-bootstrap",
-  "title": "Starter Gulp Bootstrap 3",
+  "title": "Starter Less Gulp",
   "version": "1.0.0",
-  "homepage": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync",
+  "homepage": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/without-bootstrap",
   "author": "chrisskinner.co",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/LICENSE"
+    "url": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/LICENSE"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -33,9 +33,7 @@
     "url": "https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "jquery": "^1.12.4",
-    "jquery.easing": "^1.4.1"
+    "jquery": "^1.12.4"
   }
 }

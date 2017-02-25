@@ -1,8 +1,12 @@
-# Starter setup - Bootstrap 3 LESS Gulp Browserify Babel and Browsersync
+# Starter setup - Gulp Browserify Babel and Browsersync
 
-A Bootstrap 3 LESS Gulp Starter Setup with Browserify Babel and Browsersync.
+A Less Gulp Starter Setup with Browserify Babel and Browsersync.
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
+
+Current branch `without-bootstrap` does not contain any bootstrap dependencies or modules.
+
+Switch to `without-bootstrap` for the bootstrap 3 less version
 
 
 ## Install
@@ -17,7 +21,7 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/package.json) file, including but not limited to: 
+Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/package.json) file, including but not limited to: 
 
 - [gulp](http://gulpjs.com/)
 - [browserify](http://browserify.org/)
@@ -61,20 +65,7 @@ The will include the following file structure with minified css, js files along 
 		index.html
 
 
-For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/gulpfile.babel.js)
-
-## Customising the LESS and JS modules - Advanced*
-
-Once `#gulp setup` has been run you can edit the following 2 files to customise what elements of bootstrap you want to bring accross into you project.
-
-`vendor/bootstrap/less/bootstrap.less` - controls which less modules to import  
-`vendor/bootstrap/dist/js/npm.js` - controls which JS modules to import
-
-Comment out any particulur module you do not wish to import. Benifits of this will be more manageable code when error fixing and smaller sized distributions files.
-
-***
-
-*You should at least have a basic understanding of how bootstrap works and the dependencies required for both the LESS and JS modules before editing the above files.
+For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/gulpfile.babel.js)
 
 ## Future plans / ideas
 
@@ -86,4 +77,4 @@ Pull requests are the way to go here. I apologise in advance for the slow action
 
 ## Copyright and License
 
-Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/LICENSE) license.
+Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/LICENSE) license.
