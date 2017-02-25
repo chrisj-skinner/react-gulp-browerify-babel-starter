@@ -1,12 +1,13 @@
-# Starter setup - Gulp Browserify Babel and Browsersync
+# Starter setup - Sass Gulp Browserify Babel and Browsersync
 
-A Less Gulp Starter Setup with Browserify Babel and Browsersync.
+A Sass Gulp Starter Setup with Browserify Babel and Browsersync.
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
 
-Current branch `without-bootstrap` does not contain any bootstrap dependencies or modules.
+Current branch `sass-version` does not contain any bootstrap dependencies or modules. Just a clean starter setup using `gulp-sass`.
 
-Switch to `without-bootstrap` for the bootstrap 3 less version
+Switch to `master` for the bootstrap 3 less version.
+Switch to `without-bootstrap` for the less without bootstrap.
 
 
 ## Install
@@ -21,7 +22,7 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/package.json) file, including but not limited to: 
+Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/package.json) file, including but not limited to: 
 
 - [gulp](http://gulpjs.com/)
 - [browserify](http://browserify.org/)
@@ -50,7 +51,7 @@ This will complile all less and js files, start a local server and then listen f
 | ------------- | -------------------------------------------------------------------------------|
 | html          | refresh the browser 															 |
 | js            | re-complile, browserify, babelify, concat, minify and then refresh the browser |
-| less          | re-complile, concat, minify and then refresh the browser						 |
+| sass          | re-complile, concat, minify and then refresh the browser						 |
 
 ### Build for distribution
 `#gulp build`  
@@ -65,7 +66,7 @@ The will include the following file structure with minified css, js files along 
 		index.html
 
 
-For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/gulpfile.babel.js)
+For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/gulpfile.babel.js)
 
 ## Future plans / ideas
 
@@ -77,4 +78,4 @@ Pull requests are the way to go here. I apologise in advance for the slow action
 
 ## Copyright and License
 
-Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/without-bootstrap/LICENSE) license.
+Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/LICENSE) license.
