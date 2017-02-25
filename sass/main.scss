@@ -1,0 +1,18 @@
+// Main less file - import all less modules and vendors here
+@import "vendor/font-awesome/scss/font-awesome"; // Some awsome fonts
+@import "variables"; // Custom variables
+@import "mixins"; // Custom mixins
+
+// Custom styles
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+}
+
+h1,
+p {
+	padding: 20px 0;
+}
