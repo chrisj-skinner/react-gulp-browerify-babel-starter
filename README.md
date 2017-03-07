@@ -6,9 +6,9 @@ This means you can write with the latest ES6 and a cross-browser friendly JS fil
 
 ## Branches
 
-`master` A gulp-less starter with bootstrap dependencies / modules
-`sass-version` A gulp-sass starter without bootstrap
-`without-bootstrap` A gulp-less starter wihtout bootstrap
+`master` A gulp-less starter with bootstrap dependencies / modules  
+`sass-version` A gulp-sass starter without bootstrap  
+`without-bootstrap` A gulp-less starter wihtout bootstrap  
 
 Current branch `sass-version`
 
