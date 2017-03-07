@@ -4,11 +4,13 @@ A Sass Gulp Starter Setup with Browserify Babel and Browsersync.
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
 
-Current branch `sass-version` does not contain any bootstrap dependencies or modules. Just a clean starter setup using `gulp-sass`.
+## Branches
 
-Switch to `master` for the bootstrap 3 less version.
-Switch to `without-bootstrap` for the less without bootstrap.
+`master` A gulp-less starter with bootstrap dependencies / modules
+`sass-version` A gulp-sass starter without bootstrap
+`without-bootstrap` A gulp-less starter wihtout bootstrap
 
+Current branch `sass-version`
 
 ## Install
 
