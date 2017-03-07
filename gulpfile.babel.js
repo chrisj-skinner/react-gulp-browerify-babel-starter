@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import less from 'gulp-less';
+import sass from 'gulp-sass';
 import browserSync from 'browser-sync';
 import cleanCSS from 'gulp-clean-css';
 import rename from "gulp-rename";
@@ -14,11 +14,11 @@ import buffer from 'vinyl-buffer';
 
 browserSync.create();
 
-// Compile LESS files from /less into /css
-gulp.task('less', function() {
-    return gulp.src('less/main.less')
+// Compile SASS files from /scss into /css
+gulp.task('sass', function() {
+    return gulp.src('sass/main.scss')
         .pipe(maps.init())
-        .pipe(less())
+        .pipe(sass())
         .pipe(maps.write('./'))
         .pipe(gulp.dest('css'))
 });
@@ -27,7 +27,7 @@ gulp.task('less', function() {
 
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', ['sass'], function() {
     return gulp.src('css/main.css')
         .pipe(maps.init())
         .pipe(cleanCSS({ compatibility: 'ie8' }))
@@ -55,11 +55,6 @@ gulp.task('minify-js', function() {
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
     return gulp.src([
-        'node_modules/bootstrap/**',
-        ])
-    .pipe(gulp.dest('vendor/bootstrap')),
-
-    gulp.src([
         'node_modules/font-awesome/**',
         ])
     .pipe(gulp.dest('vendor/font-awesome'))
@@ -68,7 +63,6 @@ gulp.task('copy', function() {
 // Copy fonts over
 gulp.task('fonts', ['copy'], function(){
     return gulp.src([
-        'vendor/bootstrap/fonts/**',
         'vendor/font-awesome/fonts/**'
         ])
     .pipe(gulp.dest('fonts'))
@@ -106,12 +100,10 @@ gulp.task('setup', ['fonts']);
 // Dev task with browserSync and watch
 gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
     // Watch file changes
-    gulp.watch(['less/*.less', 'vendor/bootstrap/less/bootstrap.less'], ['minify-css']);
-    gulp.watch(['js/*.js', 'vendor/bootstrap/dist/js/npm.js', '!js/*.min.js'], ['minify-js'] );
+    gulp.watch('sass/*.scss', ['minify-css']);
+    gulp.watch(['js/*.js', '!js/*.min.js'], ['minify-js'] );
     // Reloads the browser on file change
     gulp.watch('*.html', browserSync.reload);
-    gulp.watch('css/*.css', browserSync.reload);
-    gulp.watch('js/main.min.js', browserSync.reload);
 });
 
 // Default build task with dist creation
