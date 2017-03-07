@@ -4,6 +4,13 @@ A Bootstrap 3 LESS Gulp Starter Setup with Browserify Babel and Browsersync.
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
 
+## Branches
+
+`master` A gulp-less starter with bootstrap dependencies / modules
+`sass-version` A gulp-sass starter without bootstrap
+`without-bootstrap` A gulp-less starter wihtout bootstrap
+
+Current branch `master`
 
 ## Install
 
