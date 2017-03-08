@@ -8,7 +8,7 @@ This means you can write with the latest ES6 and a cross-browser friendly JS fil
 
 `master` A gulp-less starter with bootstrap dependencies / modules  
 `sass-version` A gulp-sass starter without bootstrap  
-`without-bootstrap` A gulp-less starter wihtout bootstrap  
+`without-bootstrap` A gulp-less starter without bootstrap  
 
 Current branch `sass-version`
 
