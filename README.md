@@ -24,7 +24,7 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/package.json) file, including but not limited to: 
+Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/package.json) file, including but not limited to:
 
 - [gulp](http://gulpjs.com/)
 - [browserify](http://browserify.org/)
