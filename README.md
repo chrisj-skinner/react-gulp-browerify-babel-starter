@@ -1,6 +1,6 @@
 # Starter setup - Bootstrap 3 LESS Gulp Browserify Babel and Browsersync
 
-A Bootstrap 3 LESS Gulp Starter Setup with Browserify Babel and Browsersync.
+A Bootstrap 3 LESS Gulp Starter Setup with Browserify Babel and Browsersync along with a test suit using [Chai](http://chaijs.com/) and [Mocha](http://mochajs.org/).
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
 
@@ -24,7 +24,7 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/package.json) file, including but not limited to: 
+Dependencies are listed within the [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/master/package.json) file, including but not limited to:
 
 - [gulp](http://gulpjs.com/)
 - [browserify](http://browserify.org/)
