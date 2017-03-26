@@ -1,6 +1,6 @@
 # Starter setup - Sass Gulp Browserify Babel and Browsersync
 
-A Sass Gulp Starter Setup with Browserify Babel and Browsersync.
+A Sass Gulp Starter Setup with Browserify Babel and Browsersync along with a test suit using [Chai](http://chaijs.com/) and [Mocha](http://mochajs.org/).
 
 This means you can write with the latest ES6 and a cross-browser friendly JS file will be served to the browser along with live browser refresh during development.
 
