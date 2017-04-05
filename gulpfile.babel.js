@@ -18,8 +18,8 @@ browserSync.create();
 const rootDir = '';
 
 // Compile SASS files from /scss into /css
-gulp.task('sass', function() {
-    return gulp.src(rootDir + 'sass/main.scss')
+gulp.task('sass', function(done) {
+    gulp.src(rootDir + 'sass/main.scss', done)
         .pipe(maps.init())
         .pipe(sass())
         .pipe(maps.write('./'))
@@ -41,7 +41,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Concat Minify Browserify SourceMap JS
 gulp.task('minify-js', function() {
-   return browserify(rootDir + 'js/theme.js')
+   return browserify(rootDir + 'js/app.js')
       .transform('babelify')
       .bundle()
       .pipe(source('main.min.js'))
