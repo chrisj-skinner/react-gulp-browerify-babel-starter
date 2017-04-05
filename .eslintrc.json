@@ -9,10 +9,6 @@
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            1,
-            "tab"
-        ],
         "linebreak-style": [
             "error",
             "unix"

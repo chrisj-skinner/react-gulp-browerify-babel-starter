@@ -36,7 +36,7 @@ gulp.task('minify-css', ['sass'], function() {
         .pipe(gulp.dest(rootDir + 'css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Concat Minify Browserify SourceMap JS
