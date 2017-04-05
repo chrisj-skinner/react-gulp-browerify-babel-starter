@@ -41,6 +41,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Concat Minify Browserify SourceMap JS
 gulp.task('minify-js', function() {
+   process.env.NODE_ENV = 'production';
    return browserify(rootDir + 'js/app.js')
       .transform('babelify')
       .bundle()
