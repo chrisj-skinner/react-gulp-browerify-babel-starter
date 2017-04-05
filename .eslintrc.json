@@ -6,6 +6,9 @@
         "amd": true,
         "mocha": true
     },
+    "globals": {
+        "React": true
+    },
     "extends": "eslint:recommended",
     "parserOptions": {
         "sourceType": "module",
@@ -13,6 +16,9 @@
             "jsx": true
         }
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
         "linebreak-style": [
             "error",
