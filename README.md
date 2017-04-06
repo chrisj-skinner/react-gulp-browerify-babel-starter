@@ -16,16 +16,32 @@ This will get all the dependencies needed to run this starter setup
 
 A full list of dependencies are listed below and can also be found in [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/package.json).
 
-- [gulp](http://gulpjs.com/)
-- [browserify](http://browserify.org/)
-- [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
-- [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
-- [browser-sync](https://www.npmjs.com/package/browser-sync)
-- [gulp-babel](https://www.npmjs.com/package/gulp-babel)
-- [gulp-concat](https://www.npmjs.com/package/gulp-concat)
-- [del](https://www.npmjs.com/package/del)
-- [vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream)
-- [vinyl-buffer](https://www.npmjs.com/package/vinyl-buffer)
+| DevDependencies     			| Version |
+| ------------- -------------	| --------|
+| babel-core 						| 6.23.1 |
+| babel-preset-es2015 			| 6.22.0 |
+| babel-preset-react 			| 6.23.0 |
+| babelify 							| 7.3.0 |
+| bootstrap 						| 3.3.7 |
+| browser-sync 					| 2.13.0 |
+| browserify 						| 14.0.0 |
+| chai 								| 3.5.0 |
+| del 								| 2.2.2 |
+| eslint 							| 3.17.1 |
+| eslint-plugin-react 			| 6.10.3 |
+| gulp 								| 3.9.1 |
+| gulp-babel 						| 6.1.2 |
+| gulp-clean-css 					| 2.0.10 |
+| gulp-rename 						| 1.2.2 |
+| gulp-sass 						| 3.1.0 |
+| gulp-sourcemaps 				| 2.4.1 |
+| gulp-uglify 						| 1.5.4 |
+| jquery 							| 1.11.3 |
+| mocha 								| 3.2.0 |
+| react 								| 15.4.2 |
+| react-dom 						| 15.4.2 |
+| vinyl-buffer 					| 1.0.0 |
+| vinyl-source-stream			| 1.1.0 |
 
 ## Commands / Builds
 
@@ -59,10 +75,6 @@ The will include the following file structure with minified css, js files along 
 
 
 For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/gulpfile.babel.js)
-
-## Future plans / ideas
-
-Add some kind of image minification / optimization when the `dist/` dir gets created. Also a JS lint package would be a nice touch. For now though, enjoy / share and please log any issues (see contributing).
 
 ## Contributing
 
