@@ -48,7 +48,7 @@ gulp.task('minify-js', function() {
       .pipe(source('main.min.js'))
       .pipe(buffer())
       .pipe(maps.init()) // create sourcemap
-      .pipe(uglify()) // minify
+      // .pipe(uglify()) // minify
       .pipe(maps.write('./')) // write sourcemap
       .pipe(gulp.dest(rootDir + 'js'))
       .pipe(browserSync.reload({
@@ -105,7 +105,7 @@ gulp.task('setup', ['fonts']);
 gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
     // Watch file changes
     gulp.watch('sass/*.scss', ['minify-css']);
-    gulp.watch(['js/*.js', '!js/*.min.js'], ['minify-js'] );
+    gulp.watch(['js/*/*.js', '!js/*.min.js'], ['minify-js'] );
     // Reloads the browser on file change
     gulp.watch('*.html', browserSync.reload);
 });
