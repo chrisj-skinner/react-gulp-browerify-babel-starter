@@ -18,8 +18,8 @@ browserSync.create();
 const rootDir = '';
 
 // Compile SASS files from /scss into /css
-gulp.task('sass', function(done) {
-    gulp.src(rootDir + 'sass/main.scss', done)
+gulp.task('sass', function() {
+    gulp.src(rootDir + 'sass/main.scss')
         .pipe(maps.init())
         .pipe(sass())
         .pipe(maps.write('./'))
@@ -39,21 +39,30 @@ gulp.task('minify-css', ['sass'], function() {
         }));
 });
 
-// Concat Minify Browserify SourceMap JS
-gulp.task('minify-js', function() {
+// Concat Browserify SourceMap JS
+gulp.task('concat-js', function() {
    process.env.NODE_ENV = 'production';
    return browserify(rootDir + 'js/app.js')
       .transform('babelify')
       .bundle()
-      .pipe(source('main.min.js'))
+      .pipe(source('main.js'))
       .pipe(buffer())
       .pipe(maps.init()) // create sourcemap
-      // .pipe(uglify()) // minify
       .pipe(maps.write('./')) // write sourcemap
       .pipe(gulp.dest(rootDir + 'js'))
       .pipe(browserSync.reload({
           stream: true // Reload Browser
       }));
+});
+
+// Minify JS
+gulp.task('minify-js', ['concat-js'], function() {
+   gulp.src(rootDir + 'js/main.js')
+      .pipe(maps.init())
+      .pipe(uglify())
+      .pipe(rename('main.min.js'))
+      .pipe(maps.write('./'))
+      .pipe(gulp.dest(rootDir + 'js'));
 });
 
 // Copy vendor libraries from /node_modules into /vendor
