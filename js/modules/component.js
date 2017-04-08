@@ -7,7 +7,13 @@ import ReactDOM from 'react-dom';
    class FirstComponent extends React.Component {
       render() {
          return(
-            <span className="first-component">First Component</span>
+            <div>
+               <p className="body">
+                  { this.props.body } by <i className="author">
+                     { this.props.author }
+                  </i>
+               </p>
+            </div>
         );
      }
    }
@@ -18,7 +24,12 @@ import ReactDOM from 'react-dom';
          return(
             <div className="new-component">
                <p>Hello, world!</p>
-               <FirstComponent />
+               <FirstComponent
+               author="J Adams" body="The Wild"
+               />
+               <FirstComponent
+               author="S Tate" body="Energy Hat"
+               />
            </div>
         );
      }
