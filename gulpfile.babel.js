@@ -5,7 +5,6 @@ import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import maps from 'gulp-sourcemaps';
-// import babel from 'gulp-babel';
 import del from 'del';
 import browserify from 'browserify';
 import source from 'vinyl-source-stream';
