@@ -14,10 +14,10 @@ This will get all the dependencies needed to run this starter setup
 
 ## Dependencies
 
-A full list of dependencies are listed below and can also be found in [package.json](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/package.json).
+A full list of dependencies are listed below and can also be found in [package.json](https://github.com/chrisj-skinner/react-gulp-browerify-babel-starter/blob/master/package.json).
 
 | DevDependencies     			| Version |
-| ------------- -------------	| --------|
+| ---------------------------	| --------|
 | babel-core 						| 6.23.1 |
 | babel-preset-es2015 			| 6.22.0 |
 | babel-preset-react 			| 6.23.0 |
@@ -74,7 +74,7 @@ The will include the following file structure with minified css, js files along 
 		index.html
 
 
-For more information about what each task does - view the [gulpfile.babel.js]()
+For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/react-gulp-browerify-babel-starter/blob/master/gulpfile.babel.js)
 
 ## Contributing
 
@@ -82,4 +82,4 @@ Pull requests are the way to go here. Apologies in advance for the slow action o
 
 ## Copyright and License
 
-Code released under the [MIT]() license.
+Code released under the [MIT](https://github.com/chrisj-skinner/react-gulp-browerify-babel-starter/blob/master/LICENSE) license.
