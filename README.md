@@ -53,13 +53,13 @@ This will pull all related files into the correct directories.
 
 ### Setup a development environment:
 `#gulp dev`  
-This will complile all less and js files, start a local server and then listen for changes on the following files types:
+This will compile all less and js files, start a local server and then listen for changes on the following files types:
 
 | File Type     | Action        																 |
 | ------------- | -------------------------------------------------------------------------------|
 | html          | refresh the browser 															 |
-| js            | re-complile, browserify, babelify, concat, minify and then refresh the browser |
-| sass          | re-complile, concat, minify and then refresh the browser						 |
+| js            | re-compile, browserify, babelify, concat, minify and then refresh the browser |
+| sass          | re-compile, concat, minify and then refresh the browser						 |
 
 ### Build for distribution
 `#gulp build`  
@@ -74,12 +74,12 @@ The will include the following file structure with minified css, js files along 
 		index.html
 
 
-For more information about what each task does - view the [gulpfile.babel.js](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/gulpfile.babel.js)
+For more information about what each task does - view the [gulpfile.babel.js]()
 
 ## Contributing
 
-Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. Please match the naming convention and be as explicit as possible. That last one is important.
+Pull requests are the way to go here. Apologies in advance for the slow action on pull requests and issues. Please match the naming convention and be as explicit as possible. That last one is important.
 
 ## Copyright and License
 
-Code released under the [MIT](https://github.com/chrisj-skinner/gulp-bootstrap-less-browserify-babel-browsersync/blob/sass-version/LICENSE) license.
+Code released under the [MIT]() license.
